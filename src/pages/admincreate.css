@@ -1,0 +1,92 @@
+/* ─── Form Card ─── */
+.form-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 32px;
+  border: 1px solid #eef2f8;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+  max-width: 640px;
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #0f1a2e;
+}
+
+.admin-input {
+  padding: 12px 16px;
+  border: 1px solid #e9edf4;
+  border-radius: 12px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.2s;
+  background: #fafcff;
+}
+
+.admin-input:focus {
+  outline: none;
+  border-color: #4f8cff;
+  box-shadow: 0 0 0 3px rgba(79, 140, 255, 0.1);
+}
+
+.admin-input::placeholder {
+  color: #a5b6ce;
+}
+
+textarea.admin-input {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* ─── Buttons ─── */
+.btn.secondary-btn {
+  background: #f4f7fc;
+  color: #1a2634;
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #e9edf4;
+  transition: all 0.2s;
+}
+
+.btn.secondary-btn:hover {
+  background: #eef2f8;
+  border-color: #c8d4e8;
+}
+
+/* Override for primary button if not already defined */
+.btn.primary-btn {
+  background: #4f8cff;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+  align-self: flex-start;
+}
+
+.btn.primary-btn:hover:not(:disabled) {
+  background: #3a78e6;
+}
+
+.btn.primary-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
